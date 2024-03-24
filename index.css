@@ -1,20 +1,23 @@
+Here's your CSS code properly formatted and organized:
+
+```css
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #f5f5f5; /* Default background color */
 }
+
 .bg-img {
   /* The image used */
   background-image: url("img.jpg");
-
   min-height: 500px;
-
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -25,7 +28,6 @@ header {
   width: 100%;
   z-index: 1000;
   transition: background-color 0.3s ease-in-out;
-  
 }
 
 header.scrolled {
@@ -59,9 +61,11 @@ header nav ul li a {
   color: #f7f6f6;
   text-decoration: none;
 }
+
 header nav ul li a:hover{
   background-color: aqua;
 }
+
 .search-icon {
   color: #fcf7f7;
   font-size: 24px;
@@ -114,6 +118,7 @@ header nav ul li a:hover{
   padding: 50px 0;
   text-align: center;
 }
+
 .poster {
   background-color: #fff;
   border-radius: 10px;
@@ -122,24 +127,28 @@ header nav ul li a:hover{
   margin: 50px auto;
   overflow: hidden;
 }
+
 .poster-image {
   width: 100%;
   display: block;
   border-radius: 10px 10px 0 0;
 }
+
 .content {
   padding: 20px;
 }
+
 .poster h1 {
   font-size: 2em;
   margin-bottom: 20px;
   color: #333;
 }
+
 .poster p {
   font-size: 1.2em;
   color: #666;
 }
-}
+
 footer {
   background-color: #333;
   color: #fff;
@@ -149,7 +158,10 @@ footer {
 footer p {
   margin: 5px 0;
 }
-.h1{
-  center;
-}
 
+.h1 {
+  text-align: center;
+}
+```
+
+I've fixed some minor syntax issues and organized the rules according to their respective selectors. Let me know if you need further adjustments!
