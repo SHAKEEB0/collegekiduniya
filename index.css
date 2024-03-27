@@ -159,6 +159,80 @@ footer p {
 .h1 {
   text-align: center;
 }
-```
+.heading1{
+  text-align: center;
+  padding-top: 35px;
+}
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .poster {
+    width: 90%; /* Adjust the width as needed */
+    margin: 20px auto; /* Center the posters */
+  }
+}
 
-I've fixed some minor syntax issues and organized the rules according to their respective selectors. Let me know if you need further adjustments!
+/* For screens larger than 768px */
+@media (min-width: 769px) {
+  .poster {
+    width: 30%; /* Adjust the width as needed */
+    margin: 50px 2.5%; /* Adjust the margin to create space between posters */
+  }
+}
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .poster {
+    width: 90%; /* Adjust the width as needed */
+    margin: 20px auto; /* Center the posters */
+  }
+
+  .about,
+  .news,
+  .cs-topics {
+    width: 90%; /* Adjust the width as needed */
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+}
+
+/* For screens larger than 768px */
+@media (min-width: 769px) {
+  .poster {
+    width: 30%; /* Adjust the width as needed */
+    margin: 50px auto; /* Center the posters */
+  }
+
+  .about,
+  .news,
+  .cs-topics {
+    width: 30%; /* Adjust the width as needed */
+    margin-right: 5%;
+    float: left;
+  }
+}
+/* For screens smaller than 768px (phones) */
+@media (max-width: 768px) {
+  .partition {
+    width: 100%; /* Each partition takes full width */
+    margin-bottom: 20px; /* Add space between partitions */
+  }
+}
+
+/* For screens larger than 768px (tablets, desktops, etc.) */
+@media (min-width: 769px) {
+  .partition {
+    width: calc(25% - 20px); /* Each partition takes 25% width with space between them */
+    margin-right: 20px; /* Add space between partitions */
+    float: left; /* Float partitions to appear next to each other */
+    margin-bottom: 20px; /* Add space at the bottom */
+  }
+}
+.transparent-navbar {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+  background-color: #460694 !important;
+}
+
