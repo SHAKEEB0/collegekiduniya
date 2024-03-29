@@ -15,10 +15,6 @@ body {
   background-size: cover;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
 
 header {
   position: fixed;
@@ -28,113 +24,25 @@ header {
   transition: background-color 0.3s ease-in-out;
 }
 
-header.scrolled {
-  background-color: #000; /* Change background color when scrolled */
-}
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
-
-header .logo {
-  color: #000000;
-  font-size: 24px;
-}
-
-header nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-header nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
- 
-header nav ul li a {
-  color:transparent;
-  text-decoration: none;
-}
 
 header nav ul li a:hover{
-  background-color: aqua;
+  background-color: rgb(50, 194, 114);
+}
+.navbar {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
 }
 
-.search-icon {
-  color: #fcf7f7;
-  font-size: 24px;
+.navbar-scrolled {
+  background-color: #50e2a7 !important;
 }
-
-.content {
-  padding: 50px 0;
-}
-
-.about,
-.news,
-.cs-topics {
-  width: 30%;
-  margin-right: 5%;
-  float: left;
-  background-color: #fff;
-  padding: 20px;
-}
-
-.about {
-  background-color: #f9f9f9;
-}
-
-.about h2,
-.news h2,
-.cs-topics h2 {
-  margin-top: 0;
-}
-
-.about p,
-.news p,
-.cs-topics p {
-  margin-bottom: 20px;
-}
-
+/* about us*/
 .about-us {
   background-color: #f9f9f9;
   padding: 50px 0;
   text-align: center;
 }
-
-.poster {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  margin: 50px auto;
-  overflow: hidden;
-}
-
-.poster-image {
-  width: 100%;
-  display: block;
-  border-radius: 10px 10px 0 0;
-}
-
-.content {
-  padding: 20px;
-}
-
-.poster h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.poster p {
-  font-size: 1.2em;
-  color: #666;
-}
-
+/*footer*/
 footer {
   background-color: #333;
   color: #fff;
@@ -152,75 +60,15 @@ footer p {
   text-align: center;
   padding-top: 35px;
 }
-/* For screens smaller than 768px */
-@media (max-width: 768px) {
-  .poster {
-    width: 90%; /* Adjust the width as needed */
-    margin: 20px auto; /* Center the posters */
-  }
+.card {
+  padding: 20px;
+  transition: transform .2s; /* Animation */
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
-/* For screens larger than 768px */
-@media (min-width: 769px) {
-  .poster {
-    width: 30%; /* Adjust the width as needed */
-    margin: 50px 2.5%; /* Adjust the margin to create space between posters */
-  }
-}
-/* For screens smaller than 768px */
-@media (max-width: 768px) {
-  .poster {
-    width: 90%; /* Adjust the width as needed */
-    margin: 20px auto; /* Center the posters */
-  }
-
-  .about,
-  .news,
-  .cs-topics {
-    width: 90%; /* Adjust the width as needed */
-    margin-right: auto;
-    margin-left: auto;
-    float: none;
-  }
-}
-
-/* For screens larger than 768px */
-@media (min-width: 769px) {
-  .poster {
-    width: 30%; /* Adjust the width as needed */
-    margin: 50px auto; /* Center the posters */
-  }
-
-  .about,
-  .news,
-  .cs-topics {
-    width: 30%; /* Adjust the width as needed */
-    margin-right: 5%;
-    float: left;
-  }
-}
-/* For screens smaller than 768px (phones) */
-@media (max-width: 768px) {
-  .partition {
-    width: 100%; /* Each partition takes full width */
-    margin-bottom: 20px; /* Add space between partitions */
-  }
-}
-
-/* For screens larger than 768px (tablets, desktops, etc.) */
-@media (min-width: 769px) {
-  .partition {
-    width: calc(25% - 20px); /* Each partition takes 25% width with space between them */
-    margin-right: 20px; /* Add space between partitions */
-    float: left; /* Float partitions to appear next to each other */
-    margin-bottom: 20px; /* Add space at the bottom */
-  }
-}
-.transparent-navbar {
-  background-color: transparent !important;
-  transition: background-color 0.3s ease;
-}
-
-.navbar-scrolled {
-  background-color: #50e2a7 !important;
+.card:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
