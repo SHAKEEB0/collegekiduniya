@@ -32,3 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
       navbarCollapse.classList.toggle("show");
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  var aboutLink = document.querySelector('.navbar-nav .nav-item:nth-child(3) .nav-link');
+  var subMenu = document.querySelector('.sub-menu');
+
+  aboutLink.addEventListener('click', function () {
+    if (subMenu.style.display === 'block') {
+      subMenu.style.display = 'none';
+    } else {
+      subMenu.style.display = 'block';
+    }
+  });
+});
