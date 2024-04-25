@@ -68,8 +68,53 @@ footer p {
   margin: 0 auto;
   background-color: #fff;
   border-radius: 35px;
+  box-shadow: inset;
 }
 
 .card:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.profile1 {
+  margin-right: 50px;
+}
+.profile1 img {
+  width: 300px; /* Increased size */
+  height: 300px; /* Increased size */
+  border-radius: 10px; /* Square border radius */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column-reverse; /* Stack elements vertically */
+  }
+  .profile1, .about {
+    width: 100%; /* Full width */
+    text-align: center; /* Center content */
+    margin: 0; /* Remove margins */
+  }
+  .profile1 img {
+    margin: 0 auto; /* Center image horizontally */
+    display: block; /* Display image as block */
+  }
+}
+.nav-item:hover .sub-menu {
+  display: block;
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  width: max-content;
+}
+.sub-menu .nav-item {
+  display: block;
 }
