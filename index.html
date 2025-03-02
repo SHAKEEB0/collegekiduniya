@@ -1,146 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
+  <!-- Essential Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>College Ki Duniya</title>
+  <meta name="description" content="Tech A Technology - Explore the latest in computer science, technology trends, and educational resources. Get semester notes and tech insights from Mohammed Shakeebuddin.">
+  
+  <!-- Open Graph/Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tech A Technology | Tech Blog & Computer Science Resources">
+  <meta property="og:description" content="Your guide to technology trends, computer science insights, and educational resources. Explore tech news and academic notes.">
+  <meta property="og:image" content="https://yourdomain.com/path-to-logo.png">
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tech A Technology | Tech Blog & Computer Science Resources">
+  <meta name="twitter:description" content="Stay updated with latest tech trends and computer science resources. Educational notes and tech news curated by Mohammed Shakeebuddin.">
+  <meta name="twitter:image" content="https://yourdomain.com/path-to-logo.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://yourdomain.com/">
+  
+  <!-- Page Title -->
+  <title>Tech A Technology | Tech Blog & Computer Science Resources</title>
+  
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+  
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="index.css">
   
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
 </head>
 
 <body>
-  <div class="bg-img">
-    <header id="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">COLLEGE KI DUNIYA</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#news">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">About us</a>
-                <ul class="sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="about1.html">About me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="team.html">Our Team</a>
-                  </li>
-                  <!-- Add more sub-menu items as needed -->
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
-              </li>
-              <!-- Add more menu items as needed -->
-            </ul>
+  <!-- Header Section -->
+  <header id="header" itemscope itemtype="https://schema.org/WPHeader">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" itemprop="url">Tech A Technology</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">Tech News</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li><a class="dropdown-item" href="about1.html">About Me</a></li>
+                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notes.html">Study Notes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero bg-img" aria-label="Welcome Section">
+    <div class="hero-content">
+      <h1 class="display-4 text-center">Welcome to Tech A Technology</h1>
+      <p class="lead text-center">Exploring the Future of Technology & Computer Science</p>
+    </div>
+  </section>
+
+  <!-- Main Content Section -->
+  <main class="container py-5">
+    <section class="featured-content">
+      <h2 class="sr-only">Featured Content</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+          <article class="card h-100">
+            <img src="p1.jpg" class="card-img-top" alt="Computer Science Concepts Illustration">
+            <div class="card-body">
+              <h3 class="card-title h5">
+                <a href="cs-topic.html" class="stretched-link">Computer Science Topics</a>
+              </h3>
+              <p class="card-text">Explore fundamental computer science concepts and latest developments in software engineering.</p>
+            </div>
+          </article>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="col">
+          <article class="card h-100">
+            <img src="notesback.jpg" class="card-img-top" alt="Study Materials Preview">
+            <div class="card-body">
+              <h3 class="card-title h5">
+                <a href="notes.html" class="stretched-link">Study Resources</a>
+              </h3>
+              <p class="card-text">Access comprehensive semester 4 notes and exam preparation materials.</p>
+            </div>
+          </article>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="col">
+          <article class="card h-100">
+            <img src="techback.jpeg" class="card-img-top" alt="Emerging Technologies">
+            <div class="card-body">
+              <h3 class="card-title h5">Emerging Technologies</h3>
+              <p class="card-text">Stay updated with the latest innovations in AI, Blockchain, and IoT technologies.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section py-5" id="about">
+      <div class="container">
+        <h2 class="mb-4">About Tech A Technology</h2>
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="lead">
+              Founded by <a href="https://in.linkedin.com/in/mohammed-shakeebuddin-5b3a6b1b1" rel="noopener noreferrer" class="text-reset">Mohammed Shakeebuddin</a>, 
+              Tech A Technology is dedicated to delivering cutting-edge insights into computer science and modern technologies.
+            </p>
+            <p>
+              As passionate technology enthusiasts and academic researchers, we aim to bridge the gap between theoretical 
+              knowledge and practical implementation. Our resources cover a wide range of topics from fundamental programming 
+              concepts to advanced technological innovations.
+            </p>
+            <a href="ss.html" class="btn btn-primary mt-3">Explore More</a>
           </div>
         </div>
-      </nav>
-    </header>
-    <br><br><br><br><br><br><br><br><br><br><br>
-    <h1>
-      <center>
-        WELCOME TO COLLEGE KI DUNIYAA</center>
-    </h1>
-  </div><BR></BR>
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card h-100">
-        <img src="p1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"><a href="cs-topic.html">CS TOPIC</a></h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
-        </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="p1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">TECH NEWS</h5>
-          <p class="card-text">This is a short card.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="p1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">NEW TECH</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="p1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">COLLEGE</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="content">
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-dark text-light py-4" itemscope itemtype="https://schema.org/WPFooter">
     <div class="container">
-      <div class="about" id="about"></div>
-      <div class="about-us">
-        <div class="container">
-          <h2>About Us</h2>
-          <p>
-            Hello and welcome to my website! My name is Mohammed Shakeebuddin, and I am thrilled that you have taken the
-            time to visit my little corner of the internet.
-
-            I am a student of computer science with a passion for new technology. I have always been fascinated by
-            upcoming technology, and my work reflects my dedication to exploring the depths of this field.
-
-            When I'm not working, you can usually find me exploring the internet. I love to explore new technology, and
-            I find that these pursuits help me to recharge and stay focused on my goals.
-
-            As you explore my website, you will find information about new technology and computer science. I am always
-            eager to share my knowledge and insights with others, and I hope that you will find my content valuable and
-            informative.
-
-            Thank you for visiting my website, and I look forward to connecting with you soon!
-          </p>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Contact Information</h3>
+          <address>
+            <p>Karimnagar, Telangana, India</p>
+            <p>Email: <a href="mailto:mohammedshakeeb.ok@gmail.com">mohammedshakeeb.ok@gmail.com</a></p>
+            <p>Phone: <a href="tel:+918897151709">+91 88971 51709</a></p>
+          </address>
+        </div>
+        <div class="col-md-4">
+          <h3>Quick Links</h3>
+          <ul class="list-unstyled">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="registration.html">Registration</a></li>
+          </ul>
         </div>
       </div>
-      <a href="ss.html">
-        <button>click</button>
-      </a>
+      <div class="text-center mt-3">
+        <p>&copy; 2024 Tech A Technology. All rights reserved.</p>
+      </div>
     </div>
-  </div>
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <h3>Contact Us</h3>
-        <p>KARIMNAGAR, TELANGANA, INDIA</p>
-        <p>Email: mohammedshakeeb.ok@gmail.com</p>
-        <p>Phone: +91 8897151709
-        </div>
-      </div>
-    </footer>
-          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-          <script src="index.js"></script>
-        </body>
-        
-        </html>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
