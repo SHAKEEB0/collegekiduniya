@@ -25,6 +25,11 @@ document.getElementById('login-form').addEventListener('submit', function(event)
 
 // Function to display error messages
 function showError(message) {
+  var existingError = document.querySelector('.error');
+  if (existingError) {
+    existingError.remove();
+  }
+
   var errorDiv = document.createElement('div');
   errorDiv.className = 'error';
   errorDiv.textContent = message;

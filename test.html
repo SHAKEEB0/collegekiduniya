@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test for showError function</title>
+  <link rel="stylesheet" href="ss.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form id="login-form">
+      <div class="input-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <div style="margin-top: 20px;">
+    <button id="test-button">Run Test</button>
+    <p>Open the browser console to see the test results.</p>
+  </div>
+  <script src="ss.js"></script>
+  <script>
+    document.getElementById('test-button').addEventListener('click', function() {
+      console.log('Running test...');
+      showError('First error message');
+      showError('Second error message');
+
+      var errorMessages = document.querySelectorAll('.error');
+      if (errorMessages.length === 1) {
+        console.log('Test passed: Only one error message is displayed.');
+      } else {
+        console.error('Test failed: ' + errorMessages.length + ' error messages are displayed.');
+      }
+    });
+  </script>
+</body>
+</html>
